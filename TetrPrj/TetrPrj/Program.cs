@@ -6,7 +6,22 @@ namespace TetrPrj
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!!!");
+            Console.SetWindowSize(30, 40);
+            Console.SetBufferSize(30, 40);
+
+            int x1 = 2;
+            int y1 = 2;
+            char c = '*';
+
+            Drow(x1, y1, c);
+
+            Console.ReadLine();
+        }
+
+        static void Drow(int x, int y, char c)
+        {
+            Console.SetCursorPosition(x, y);
+            Console.Write(c);
         }
     }
 }
