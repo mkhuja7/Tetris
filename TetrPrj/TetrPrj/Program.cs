@@ -10,12 +10,9 @@ namespace TetrPrj
             Console.SetBufferSize(30, 40);
 
 
-            Points p1 = new Points();
-            p1.x = 2;
-            p1.y = 3;
-            p1.c = '*';
-            p1.Draw();
+            Points p1 = new Points(2,3,'*');
 
+            p1.Draw();
 
             Console.ReadLine();
         }
