@@ -13,12 +13,12 @@ namespace TetrPrj
             int y1 = 2;
             char c = '*';
 
-            Drow(x1, y1, c);
+            Draw(x1, y1, c);
 
             Console.ReadLine();
         }
 
-        static void Drow(int x, int y, char c)
+        static void Draw(int x, int y, char c)
         {
             Console.SetCursorPosition(x, y);
             Console.Write(c);
