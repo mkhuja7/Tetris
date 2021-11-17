@@ -9,19 +9,17 @@ namespace TetrPrj
             Console.SetWindowSize(30, 40);
             Console.SetBufferSize(30, 40);
 
-            int x1 = 2;
-            int y1 = 2;
-            char c = '*';
 
-            Draw(x1, y1, c);
+            Points p1 = new Points();
+            p1.x = 2;
+            p1.y = 3;
+            p1.c = '*';
+            p1.Draw();
+
 
             Console.ReadLine();
         }
 
-        static void Draw(int x, int y, char c)
-        {
-            Console.SetCursorPosition(x, y);
-            Console.Write(c);
-        }
+       
     }
 }
