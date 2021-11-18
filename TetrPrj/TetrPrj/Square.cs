@@ -4,10 +4,8 @@ using System.Text;
 
 namespace TetrPrj
 {
-    class Square
+    class Square :figure
     {
-        Points[] points = new Points[4];
-
         public Square(int x, int y, char s)
         {
             points[0] = new Points(x, y, s);
@@ -17,12 +15,6 @@ namespace TetrPrj
 
         }
 
-        public void Draw()
-        {
-            foreach(Points p in points)
-            {
-                p.Draw();
-            }
-        }
+        
     }
 }

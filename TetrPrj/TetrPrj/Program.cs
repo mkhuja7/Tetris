@@ -9,15 +9,16 @@ namespace TetrPrj
             Console.SetWindowSize(30, 40);
             Console.SetBufferSize(30, 40);
 
-            Square sqr = new Square(2, 5, '*');
-            sqr.Draw();
+            figure[] f = new figure[2];
+            f[0]= new Square(2, 5, '*');
+            f[1] = new Stick(6, 6, '*');
 
-            Stick stick = new Stick(6, 6, '*');
-            stick.Draw();
+            foreach(figure fig in f)
+            {
+                fig.Draw();
+            }
 
-           // Points p1 = new Points(2,3,'*');
-
-            // p1.Draw();
+          
 
             Console.ReadLine();
         }

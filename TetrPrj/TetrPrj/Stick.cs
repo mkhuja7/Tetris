@@ -4,9 +4,8 @@ using System.Text;
 
 namespace TetrPrj
 {
-    class Stick
+    class Stick : figure
     {
-        Points[] points = new Points[4];
 
         public Stick(int x, int y, char s)
         {
@@ -18,12 +17,5 @@ namespace TetrPrj
         }
 
 
-        public void Draw()
-        {
-            foreach (Points p in points)
-            {
-                p.Draw();
-            }
-        }
     }
 }
